@@ -1,15 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import Htmlform from './components/HtmlForm'
+import HtmlForm from './components/HtmlForm'
+import BasicReactForm from './components/BasicReactForm'
+import ReactHookForm from './components/ReactHookForm'
+import ReactHookFormV2 from './components/ReactHookForm'
 
-import './App.css';
+import './App.css'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 const App = () => {
   return (
@@ -20,28 +18,33 @@ const App = () => {
             <Link to="/">HTML Form</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/basic-react-form">BasicReactForm</Link>
           </li>
           <li>
-            <Link to="/topics">Topics</Link>
+            <Link to="/react-hook-form">React Hook Form</Link>
+          </li>
+          <li>
+            <Link to="/react-hook-form-v2">React Hook Form</Link>
           </li>
         </ul>
 
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
           <Route path="/">
-            <Htmlform />
+            <HtmlForm />
+          </Route>
+          <Route path="/basic-react-form">
+            <BasicReactForm />
+          </Route>
+          <Route path="/react-hook-form">
+            <ReactHookForm />
+          </Route>
+          <Route path="/react-hook-form-v2">
+            <ReactHookFormV2 />
           </Route>
         </Switch>
       </div>
     </Router>
-  );
+  )
 }
 
-function About() {
-  return <h2>About</h2>;
-}
-
-export default App;
+export default App
