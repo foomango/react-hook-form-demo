@@ -13,8 +13,12 @@ const HtmlForm = () => {
       <label>Email</label>
       <input name="email" />
       <label></label>
-      <input type="checkbox" /> <span>I accept the Terms and Conditions.</span>
-      <input type="submit" value="Submit" />
+      <label>Password</label>
+      <input name="password" type="password" />
+      <label>Confirm</label>
+      <input name="confirm" type="password" />
+      <input name="term" type="checkbox" /> <span>I accept the Terms and Conditions.</span>
+      <input type="submit" value="Register" />
     </form>
   )
 }
