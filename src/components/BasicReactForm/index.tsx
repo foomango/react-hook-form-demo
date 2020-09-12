@@ -27,7 +27,6 @@ const BasicReactForm = () => {
     <form onSubmit={handleSubmit}>
       <label>Email</label>
       <input value={formState.email} onChange={handleInputChange} name="email" />
-      <label></label>
       <label>Password</label>
       <input value={formState.password} onChange={handleInputChange} name="password" type="password" />
       <label>Confirm</label>

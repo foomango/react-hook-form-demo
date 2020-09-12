@@ -12,7 +12,6 @@ const HtmlForm = () => {
     <form onSubmit={handleSubmit}>
       <label>Email</label>
       <input name="email" />
-      <label></label>
       <label>Password</label>
       <input name="password" type="password" />
       <label>Confirm</label>
