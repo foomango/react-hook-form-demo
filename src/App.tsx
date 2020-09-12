@@ -29,9 +29,6 @@ const App = () => {
         </ul>
 
         <Switch>
-          <Route path="/">
-            <HtmlForm />
-          </Route>
           <Route path="/basic-react-form">
             <BasicReactForm />
           </Route>
@@ -42,6 +39,9 @@ const App = () => {
             <ReactHookFormV2 />
           </Route>
         </Switch>
+        <Route path="/">
+          <HtmlForm />
+        </Route>
       </div>
     </Router>
   )
