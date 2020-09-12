@@ -46,7 +46,7 @@ const App = () => {
             <ReactHookFormV2 />
           </Route>
         </Switch>
-        <Route path="/">
+        <Route exact path="/">
           <LiveDemo />
         </Route>
       </div>
