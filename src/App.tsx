@@ -1,5 +1,6 @@
 import React from 'react'
 
+import LiveDemo from './components/LiveDemo'
 import HtmlForm from './components/HtmlForm'
 import BasicReactForm from './components/BasicReactForm'
 import ReactHookForm from './components/ReactHookForm'
@@ -15,6 +16,9 @@ const App = () => {
       <div>
         <ul>
           <li>
+            <Link to="/">Live Demo</Link>
+          </li>
+          <li>
             <Link to="/">HTML Form</Link>
           </li>
           <li>
@@ -29,6 +33,9 @@ const App = () => {
         </ul>
 
         <Switch>
+          <Route path="/html-form">
+            <HtmlForm />
+          </Route>
           <Route path="/basic-react-form">
             <BasicReactForm />
           </Route>
@@ -40,7 +47,7 @@ const App = () => {
           </Route>
         </Switch>
         <Route path="/">
-          <HtmlForm />
+          <LiveDemo />
         </Route>
       </div>
     </Router>
