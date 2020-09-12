@@ -28,7 +28,7 @@ const App = () => {
             <Link to="/react-hook-form">React Hook Form</Link>
           </li>
           <li>
-            <Link to="/react-hook-form-v2">React Hook Form</Link>
+            <Link to="/react-hook-form-v2">React Hook Form V2</Link>
           </li>
         </ul>
 
