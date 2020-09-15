@@ -160,3 +160,21 @@ form {
   top: 20px;
   right: 20px;
 }
+
+.ant-checkbox-wrapper {
+  margin-bottom: 0;
+  input {
+    margin: 0;
+  }
+}
+
+.mstr-rc-invalid {
+  border-color: red;
+  border-style: solid;
+  outline: none;
+}
+
+label.mstr-rc-invalid {
+  border-width: 2px;
+  border-style: dashed;
+}

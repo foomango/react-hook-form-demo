@@ -4,9 +4,9 @@ import LiveDemo from './components/LiveDemo'
 import HtmlForm from './components/HtmlForm'
 import BasicReactForm from './components/BasicReactForm'
 import ReactHookForm from './components/ReactHookForm'
-import ReactHookFormV2 from './components/ReactHookForm'
+import ReactHookFormV2 from './components/ReactHookFormV2'
 
-import './App.css'
+import './App.scss'
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
