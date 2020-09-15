@@ -1,0 +1,6 @@
+@import './mixin';
+
+$with-form-validation-prefix-cls: with-form-validation;
+$message: #{$with-form-validation-prefix-cls}-message;
+
+@include validation();
