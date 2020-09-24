@@ -14,23 +14,22 @@ const App = () => {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Live Demo</Link>
-          </li>
-          <li>
-            <Link to="/">HTML Form</Link>
-          </li>
-          <li>
-            <Link to="/basic-react-form">BasicReactForm</Link>
-          </li>
-          <li>
-            <Link to="/react-hook-form">React Hook Form</Link>
-          </li>
-          <li>
-            <Link to="/react-hook-form-v2">React Hook Form V2</Link>
-          </li>
-        </ul>
+        {null && (
+          <ul>
+            <li>
+              <Link to="/">Live Demo</Link>
+            </li>
+            <li>
+              <Link to="/basic-react-form">BasicReactForm</Link>
+            </li>
+            <li>
+              <Link to="/react-hook-form">React Hook Form</Link>
+            </li>
+            <li>
+              <Link to="/react-hook-form-v2">React Hook Form V2</Link>
+            </li>
+          </ul>
+        )}
 
         <Switch>
           <Route path="/html-form">
@@ -45,10 +44,10 @@ const App = () => {
           <Route path="/react-hook-form-v2">
             <ReactHookFormV2 />
           </Route>
+          <Route path="/">
+            <LiveDemo />
+          </Route>
         </Switch>
-        <Route exact path="/">
-          <LiveDemo />
-        </Route>
       </div>
     </Router>
   )
