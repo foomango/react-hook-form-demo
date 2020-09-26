@@ -2,12 +2,12 @@ import React from 'react'
 
 import { onSubmit } from '../../services/submit'
 
-const handleSubmit: React.FormEventHandler = (event) => {
-  onSubmit({})
-  event.preventDefault()
-}
+const HtmlForm = () => {
+  const handleSubmit: React.FormEventHandler = (event) => {
+    onSubmit({})
+    event.preventDefault()
+  }
 
-const LiveDemo = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>Email</label>
@@ -22,4 +22,4 @@ const LiveDemo = () => {
   )
 }
 
-export default LiveDemo
+export default HtmlForm
